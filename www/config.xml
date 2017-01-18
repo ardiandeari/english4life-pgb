@@ -7,8 +7,7 @@
   <author email="ardi.deari@gmail.com" href="http://english4life.mk/">
       Ardian Deari
     </author>
-  <content src="index.html"/>
-  <access origin="*"/>
+
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
@@ -35,8 +34,8 @@
   <gap:plugin name="cordova-plugin-inappbrowser" spec="1.6.1" source="npm" />
 
 
-  <gap:splash src="splash.png" />
-  
+  <gap:splash src="resources\splash.png" />
+
   <platform name="ios">
     <icon src="resources\ios\icon\icon.png" width="57" height="57"/>
     <icon src="resources\ios\icon\icon@2x.png" width="114" height="114"/>
@@ -68,5 +67,8 @@
     <splash src="resources\ios\splash\Default~iphone.png" width="320" height="480"/>
   </platform>
 
-  <icon src="icon.png" />
+  <icon src="resources\icon.png" />
+
+  <content src="index.html"/>
+  <access origin="*"/>
 </widget>
