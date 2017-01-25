@@ -2,21 +2,22 @@
 <widget id="com.englishforlife.mk" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
   <name>English For Life</name>
   <description>
-        English 4 Life
+        English For Life
     </description>
   <author email="ardi.deari@gmail.com" href="http://english4life.mk/">
       Ardian Deari
     </author>
 
-  
-<config-file platform="ios" parent="NSCameraUsageDescription" mode="replace">  
-    <string>Allow this app to access your photo library.</string>  
-</config-file>  
-  
-  
-<config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">  
-    <string>Allow this app to access your photo library</string>  
-</config-file>  
+
+  <config-file platform="ios" parent="NSCameraUsageDescription" mode="replace">
+      <string>Allow this app to access your photo library.</string>
+  </config-file>
+
+
+  <config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">
+      <string>Allow this app to access your photo library</string>
+  </config-file>
+
     <preference name="SplashScreenDelay" value="2000"/>
     <preference name="FadeSplashScreenDuration" value="2000"/>
     <preference name="SplashScreen" value="screen"/>
