@@ -51,6 +51,16 @@
   <!-- InAppBrowser Plugin -->
   <plugin name="cordova-plugin-inappbrowser" spec="1.6.1" source="npm" />
 
+  <!-- Icons & Splash for Android-->
+  <platform name="android">
+              <icon src="resources/android/ldpi.png" density="ldpi" />
+              <icon src="resources/android/mdpi.png" density="mdpi" />
+              <icon src="resources/android/hdpi.png" density="hdpi" />
+              <icon src="resources/android/xhdpi.png" density="xhdpi" />
+              <icon src="resources/android/xxhdpi.png" density="xxhdpi" />
+              <icon src="resources/android/xxxhdpi.png" density="xxxhdpi" />
+     </platform>
+
 <!-- Icons & Splash for iOS -->
     <icon src="resources/ios/icons/icon.png" width="57" height="57" platform="ios" />
     <icon src="resources/ios/icons/icon@2x.png" width="114" height="114" platform="ios" />
