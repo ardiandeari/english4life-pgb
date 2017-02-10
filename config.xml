@@ -117,9 +117,6 @@
   <icon src="icon.png" platform="ios"/>
   <splash src="splash.png" platform="ios"/>
 
-  <icon src="icon.png" platform="android"/>
-  <splash src="splash.png" platform="android"/>
-
   <content src="index.html"/>
 
   <allow-navigation href="http://*.englishforlife.mk/*" />
