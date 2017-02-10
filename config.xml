@@ -16,7 +16,6 @@
         <string>Allow this app to access your photo library.</string>
     </config-file>
 
-
     <config-file platform="android" parent="NSPhotoLibraryUsageDescription" mode="replace">
         <string>Allow this app to access your photo library</string>
     </config-file>
