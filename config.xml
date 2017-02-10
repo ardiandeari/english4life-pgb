@@ -8,10 +8,6 @@
       Ardian Deari
     </author>
 
-    <feature name="http://api.phonegap.com/1.0/camera"/>
-    <feature name="http://api.phonegap.com/1.0/file"/>
-    <feature name="http://api.phonegap.com/1.0/media"/>
-
 
   <config-file platform="ios" parent="NSCameraUsageDescription" mode="replace">
       <string>Allow this app to access your photo library.</string>
@@ -25,6 +21,8 @@
     <preference name="SplashScreenDelay" value="2000"/>
     <preference name="FadeSplashScreenDuration" value="2000"/>
     <preference name="SplashScreen" value="screen"/>
+    <preference name="InAppBrowserStorageEnabled" value="true"/>
+
 <!--
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
@@ -72,7 +70,7 @@
     <icon src="resources/android/ic_notification/drawable-xhdpi/noti.png" density="xhdpi" />
     <icon src="resources/android/ic_notification/drawable-xxhdpi-v11/noti.png" density="xxhdpi" />
     <icon src="resources/android/ic_notification/drawable-xxhdpi/noti.png" density="xxhdpi" />
-    <icon src="resources/android/ic_notification/drawable-xxxhdpi-v11/noti.png" density="xxxhdpi" />
+  <icon src="resources/android/ic_notification/drawable-xxxhdpi-v11/noti.png" density="xxxhdpi" />
   <icon src="resources/android/ic_notification/drawable-xxxhdpi/noti.png" density="xxxhdpi" />
     <icon src="icon.png" platform="android"/>
   <preference name="android-targetSdkVersion" value="19"/>
