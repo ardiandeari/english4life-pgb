@@ -8,6 +8,18 @@
       Ardian Deari
     </author>
 
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+
+    <config-file platform="android" parent="NSCameraUsageDescription" mode="replace">
+        <string>Allow this app to access your photo library.</string>
+    </config-file>
+
+
+    <config-file platform="android" parent="NSPhotoLibraryUsageDescription" mode="replace">
+        <string>Allow this app to access your photo library</string>
+    </config-file>
 
   <config-file platform="ios" parent="NSCameraUsageDescription" mode="replace">
       <string>Allow this app to access your photo library.</string>
@@ -108,6 +120,9 @@
 
   <icon src="icon.png" platform="ios"/>
   <splash src="splash.png" platform="ios"/>
+
+  <icon src="icon.png" platform="android"/>
+  <splash src="splash.png" platform="android"/>
 
   <content src="index.html"/>
 
