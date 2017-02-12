@@ -8,6 +8,9 @@
       Ardian Deari
     </author>
 
+  <config-file platform="android" parent="PictureSourceType.SAVEDPHOTOALBUM" mode="replace">
+      <string> Allow this app to access your photo library.</string>
+    </config-file>
 
   <config-file platform="ios" parent="NSCameraUsageDescription" mode="replace">
       <string>Allow this app to access your photo library.</string>
