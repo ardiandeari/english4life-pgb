@@ -8,9 +8,6 @@
       Ardian Deari
     </author>
 
-  <config-file platform="android" parent="PictureSourceType.SAVEDPHOTOALBUM" mode="replace">
-      <string> Allow this app to access your photo library.</string>
-    </config-file>
 
   <config-file platform="ios" parent="NSCameraUsageDescription" mode="replace">
       <string>Allow this app to access your photo library.</string>
@@ -67,7 +64,7 @@
     <icon src="resources/android/ic_notification/drawable-hdpi/noti.png" density="hdpi" />
     <icon src="resources/android/ic_notification/drawable-mdpi-v11/noti.png" density="mdpi" />
     <icon src="resources/android/ic_notification/drawable-mdpi/noti.png" density="mdpi" />
-   <icon src="resources/android/ic_notification/drawable-xhdpi-v11/noti.png" density="xhdpi" />
+  <icon src="resources/android/ic_notification/drawable-xhdpi-v11/noti.png" density="xhdpi" />
   <icon src="resources/android/ic_notification/drawable-xhdpi/noti.png" density="xhdpi" />
   <icon src="resources/android/ic_notification/drawable-xxhdpi-v11/noti.png" density="xxhdpi" />
   <icon src="resources/android/ic_notification/drawable-xxhdpi/noti.png" density="xxhdpi" />
