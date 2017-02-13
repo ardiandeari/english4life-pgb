@@ -60,26 +60,7 @@ angular.module('APP', ['ionic', 'APP.controllers'])
       }
     }
   })
-  import { Component } from '@angular/core';
-  import { Camera } from 'ionic-native';
-  @Component({
-   selector: '/forum',
-   templateUrl: 'templates/tab-forum.html'
-  })
-  export class HomePage {
-    base64Image
-    constructor() {}
-   accessGallery(){
-     Camera.getPicture({
-       sourceType: Camera.PictureSourceType.SAVEDPHOTOALBUM,
-       destinationType: Camera.DestinationType.DATA_URL
-      }).then((imageData) => {
-        this.base64Image = 'data:image/jpeg;base64,'+imageData;
-       }, (err) => {
-        console.log(err);
-      });
-    }
-  }
+
   .state('tab.contact', {
       url: '/contact',
       views: {
@@ -94,3 +75,24 @@ angular.module('APP', ['ionic', 'APP.controllers'])
   $urlRouterProvider.otherwise('/tab/home');
 
 });
+
+import { Component } from '@angular/core';
+import { Camera } from 'ionic-native';
+@Component({
+ selector: 'ForumCtrl',
+ templateUrl: 'templates/tab-forum.html'
+})
+export class forum {
+  base64Image
+  constructor() {}
+ accessGallery(){
+   Camera.getPicture({
+     sourceType: Camera.PictureSourceType.SAVEDPHOTOALBUM,
+     destinationType: Camera.DestinationType.DATA_URL
+    }).then((imageData) => {
+      this.base64Image = 'data:image/jpeg;base64,'+imageData;
+     }, (err) => {
+      console.log(err);
+    });
+  }
+}
