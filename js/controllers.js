@@ -17,8 +17,3 @@ angular.module('APP.controllers', [])
 .controller('ForumCtrl', function($scope) {
 
 });
-
-  webSettings.setJavaScriptEnabled(true);
-   webSettings.setLoadWithOverviewMode(true);
-  webSettings.setAllowFileAccess(true);
-  webSettings.setDomStorageEnabled(true);

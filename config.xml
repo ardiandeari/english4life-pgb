@@ -8,8 +8,6 @@
       Ardian Deari
     </author>
 
-    <preference name="webviewbounce" value="true"/>
-  <preference name="UIWebViewBounce" value="true"/>
 
   <config-file platform="ios" parent="NSCameraUsageDescription" mode="replace">
       <string>Allow this app to access your photo library.</string>
