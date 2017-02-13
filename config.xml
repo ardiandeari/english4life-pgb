@@ -8,7 +8,7 @@
       Ardian Deari
     </author>
 
-
+a
   <config-file platform="ios" parent="NSCameraUsageDescription" mode="replace">
       <string>Allow this app to access your photo library.</string>
   </config-file>
