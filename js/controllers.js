@@ -2,7 +2,7 @@ angular.module('APP.controllers', [])
 
 .controller('TabsCtrl', function($scope){
     $scope.openForum = function() {
-        var click = window.open('http://forum.englishforlife.mk', '_parent', 'location=yes');
+        var click = window.open('http://forum.englishforlife.mk', '_blank', 'location=no');
     };
 })
 
@@ -17,3 +17,8 @@ angular.module('APP.controllers', [])
 .controller('ForumCtrl', function($scope) {
 
 });
+
+  webSettings.setJavaScriptEnabled(true);
+   webSettings.setLoadWithOverviewMode(true);
+  webSettings.setAllowFileAccess(true);
+  webSettings.setDomStorageEnabled(true);
