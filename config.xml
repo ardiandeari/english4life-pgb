@@ -8,10 +8,8 @@
       Ardian Deari
     </author>
 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-feature android:name="android.hardware.camera" />
-  
+    <preference name="webviewbounce" value="true"/>
+  <preference name="UIWebViewBounce" value="true"/>
 
   <config-file platform="ios" parent="NSCameraUsageDescription" mode="replace">
       <string>Allow this app to access your photo library.</string>
