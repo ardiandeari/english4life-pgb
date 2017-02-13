@@ -2,7 +2,7 @@ angular.module('APP.controllers', [])
 
 .controller('TabsCtrl', function($scope){
     $scope.openForum = function() {
-        var click = window.open('http://forum.englishforlife.mk', '_top', 'location=no');
+        var click = window.open('http://forum.englishforlife.mk', '_parent', 'location=yes');
     };
 })
 
