@@ -21,10 +21,10 @@ angular.module('APP.controllers', [])
 import { Component } from '@angular/core';
 import { Camera } from 'ionic-native';
 @Component({
- selector: 'ForumCtrl',
+ selector: 'Forum',
  templateUrl: 'templates/tab-forum.html'
 })
-export class ForumCtrl {
+export class Forum {
   base64Image
   constructor() {}
  accessGallery(){
