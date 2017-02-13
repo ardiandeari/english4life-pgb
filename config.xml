@@ -7,7 +7,7 @@
   <author email="ardi.deari@gmail.com" href="http://english4life.mk/">
       Ardian Deari
     </author>
-asasa
+
 
   <config-file platform="ios" parent="NSCameraUsageDescription" mode="replace">
       <string>Allow this app to access your photo library.</string>
