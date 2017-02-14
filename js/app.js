@@ -75,15 +75,3 @@ angular.module('APP', ['ionic', 'APP.controllers'])
   $urlRouterProvider.otherwise('/tab/home');
 
 });
-
-navigator.camera.getPicture(function(){
-    // On Success logic
-    that._onPhotoURISuccess.apply(that,arguments);
-}, function(){
-    // On Failure logic
-    cameraApp._onFail.apply(that,arguments);
-}, {
-    quality: 50,
-    destinationType: cameraApp._destinationType.FILE_URI,
-    sourceType: PHOTOLIBRARY
-});
