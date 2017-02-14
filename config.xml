@@ -90,5 +90,4 @@
   <allow-navigation href="http://*.englishforlife.mk/*" />
   <allow-intent href="http://*.englishforlife.mk/*" />
   <access origin="*"/>
-  <allow-navigation href="file://*/*" />
 </widget>
