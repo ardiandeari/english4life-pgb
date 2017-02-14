@@ -75,37 +75,3 @@ angular.module('APP', ['ionic', 'APP.controllers'])
   $urlRouterProvider.otherwise('/tab/home');
 
 });
-
-
-//image file chooser
-function openFilePicker(selection) {
-
-    var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
-    var options = setOptions(srcType);
-    var func = createNewFileEntry;
-
-    navigator.camera.getPicture(function cameraSuccess(imageUri) {
-
-        // Do something
-
-    }, function cameraError(error) {
-        console.debug("Unable to obtain picture: " + error, "app");
-
-    }, options);
-}
-
-navigator.camera.cleanup(onSuccess, onFail);
-
-function onSuccess() {
-    console.log("Camera cleanup success.")
-}
-
-function onFail(message) {
-    alert('Failed because: ' + message);
-}
-// Show image
-//
-function cameraCallback(imageData) {
-   var image = document.getElementById('myImage');
-   image.src = "data:image/jpeg;base64," + imageData;
-});
