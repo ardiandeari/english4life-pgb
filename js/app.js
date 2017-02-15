@@ -75,25 +75,3 @@ angular.module('APP', ['ionic', 'APP.controllers'])
   $urlRouterProvider.otherwise('/tab/home');
 
 });
-
-module.controller('PictureCtrl', function($scope, $cordovaCamera) {
-
-  document.addEventListener("deviceready", function () {
-
-    var options = {
-      destinationType: Camera.DestinationType.FILE_URI,
-      sourceType: Camera.PictureSourceType.CAMERA,
-    };
-
-    $cordovaCamera.getPicture(options).then(function(imageURI) {
-      var image = document.getElementById('myImage');
-      image.src = imageURI;
-    }, function(err) {
-      // error
-    });
-
-
-    $cordovaCamera.cleanup().then(...); // only for FILE_URI
-
-  }, false);
-});
