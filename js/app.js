@@ -75,3 +75,19 @@ angular.module('APP', ['ionic', 'APP.controllers'])
   $urlRouterProvider.otherwise('/tab/home');
 
 });
+
+function openFilePicker(selection) {
+
+    var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
+    var options = setOptions(srcType);
+    var func = createNewFileEntry;
+
+    navigator.camera.getPicture(function cameraSuccess(imageUri) {
+
+        // Do something
+
+    }, function cameraError(error) {
+        console.debug("Unable to obtain picture: " + error, "app");
+
+    }, options);
+}
