@@ -76,18 +76,24 @@ angular.module('APP', ['ionic', 'APP.controllers'])
 
 });
 
-function openFilePicker(selection) {
+module.controller('PictureCtrl', function($scope, $cordovaCamera) {
 
-    var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
-    var options = setOptions(srcType);
-    var func = createNewFileEntry;
+  document.addEventListener("deviceready", function () {
 
-    navigator.camera.getPicture(function cameraSuccess(imageUri) {
+    var options = {
+      destinationType: Camera.DestinationType.FILE_URI,
+      sourceType: Camera.PictureSourceType.CAMERA,
+    };
 
-        // Do something
+    $cordovaCamera.getPicture(options).then(function(imageURI) {
+      var image = document.getElementById('myImage');
+      image.src = imageURI;
+    }, function(err) {
+      // error
+    });
 
-    }, function cameraError(error) {
-        console.debug("Unable to obtain picture: " + error, "app");
 
-    }, options);
-}
+    $cordovaCamera.cleanup().then(...); // only for FILE_URI
+
+  }, false);
+});
